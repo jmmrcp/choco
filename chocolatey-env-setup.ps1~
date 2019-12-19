@@ -11,9 +11,9 @@ choco install -y  thunderbird
 
 Write-Host "`n========= File Sharing... ========="
 choco install -y  qbittorrent
-choco install -y  --ignore-checksuns atubecatcher
-choco install -y  --ignore-checksums ares
-choco install -y  --ignore-checksums youtube-dl
+choco install -y  atubecatcher
+choco install -y  ares
+choco install -y  youtube-dl
 choco install -y  jdownloader
 
 Write-Host "`n========= Utilities... ========="
