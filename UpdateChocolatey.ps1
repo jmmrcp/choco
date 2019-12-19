@@ -1,6 +1,3 @@
-# Install Chocolatey and applications
-# Running this runs the above
-
 $here = Split-Path -parent $MyInvocation.MyCommand.Definition
 $script = $MyInvocation.MyCommand.Name
 
@@ -13,4 +10,8 @@ if (-not $principal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Adm
     Exit
 }
 
-iex ((new-object net.webClient).DownloadString('https://raw.githubusercontent.com/jmmrcp/choco/master/chocolatey-env-setup.ps1'))
+Write-Host "`n========= Updating chocolatey... ========="
+& choco upgrade -y all
+
+Write-Host "Press any key to continue..."
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
