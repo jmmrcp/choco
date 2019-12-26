@@ -39,3 +39,4 @@ foreach ($App in $AppsToInstall) {
 $limit = (Get-Date).AddDays(-10)
 
 Get-ChildItem -Path $LogDir | Where-Object { $_.CreationTime -lt $limit } | Remove-Item -Force
+

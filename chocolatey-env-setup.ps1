@@ -10,7 +10,7 @@ choco install -y  skype
 choco install -y  thunderbird
 
 Write-Host "`n========= File Sharing... ========="
-choco install -y  qbittorrent
+choco install -y  --ignore-checksums qbittorrent
 choco install -y  --ignore-checksuns atubecatcher
 choco install -y  --ignore-checksums ares
 choco install -y  --ignore-checksums youtube-dl

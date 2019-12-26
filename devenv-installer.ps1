@@ -1,6 +1,11 @@
 # Install Chocolatey and applications
 # Running this runs the above
-
+# Attempt to upgrade chocolatey (and all installed packages) else (if the command fails) install it.
+try {
+    choco upgrade all -y -r --no-progress --log-file=$LogFile
+    } catch {
+    [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    }
 $here = Split-Path -parent $MyInvocation.MyCommand.Definition
 $script = $MyInvocation.MyCommand.Name
 
