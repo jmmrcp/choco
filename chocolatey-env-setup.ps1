@@ -41,7 +41,7 @@ choco install -y  flashplayeractivex
 
 Write-Host "`n========= Online Storage... ========="
 choco install -y  dropbox
-choco install -y  google-backup-and-sync
+choco install -y  --ignore-checksums google-backup-and-sync
 choco install -y  googledrive
 
 Write-Host "`n========= Images... ========="
