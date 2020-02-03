@@ -53,7 +53,7 @@ choco install -y  inkscape
 
 Write-Host "`n========= Compression... ========="
 choco install -y  7zip
-choco install -y  winrar
+choco install -y  --ignore-checksums winrar
 
 Write-Host "`n========= Documents... ========="REM Documents
 choco install -y  pdfcreator

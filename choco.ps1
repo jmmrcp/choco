@@ -24,7 +24,6 @@ try {
     [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
     }
 
-
 # Create an array from the list of apps
 $AppsToInstall = @(Get-Content $AppList)
 
