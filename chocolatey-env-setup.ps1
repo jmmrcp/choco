@@ -26,7 +26,7 @@ choco install -y  itunes
 choco install -y  vlc
 choco install -y  audacity
 choco install -y  k-litecodecpackmega
-choco install -y  --ignore-checksums spotify
+# choco install -y  --ignore-checksums spotify
 choco install -y  handbrake.install
 choco install -y  mpv
 
